@@ -3,6 +3,7 @@
 import { HomeIcon, HexagonIcon, BookOpenIcon, FolderIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ThemeToggle } from "./theme-toggle";
 
 export function Navbar({ mobileMenu }: { mobileMenu?: React.ReactNode }) {
   const pathname = usePathname();
@@ -51,6 +52,7 @@ export function Navbar({ mobileMenu }: { mobileMenu?: React.ReactNode }) {
         </div>
         
         <div className="navbar-right">
+          <ThemeToggle />
           {/* Mobile menu passed from layout */}
           {mobileMenu}
         </div>

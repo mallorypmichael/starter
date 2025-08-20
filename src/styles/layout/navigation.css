@@ -298,3 +298,28 @@
   padding: 4px 0;
   font-size: 15px;
 }
+
+/* Theme toggle styling */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.375rem;
+  background-color: transparent;
+  border: none;
+  color: var(--muted-foreground);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background-color: hsl(var(--muted) / 0.5);
+  color: var(--foreground);
+}
+
+.theme-icon {
+  width: 1rem;
+  height: 1rem;
+}
